@@ -27,7 +27,7 @@ For the remainder of this section, let us fix an order regular category $\mathca
 
 **Lemma:** $(R,p,q)$ is the comma object of the cospan $(f,1)$ if and only if there is $d$ such that $pd=1, dp\le 1, qd=f$.
 
-*Proof:* Only if is a straight-forward verification. For the other direction see [here](/img/drewslemma.png).
+*Proof:* Only if is a straight-forward verification. For the other direction see [here](../img/drewslemma.png).
 
 ## Factorisation System
 
