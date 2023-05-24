@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; Introduction to Weakening Relations</title>
+    <title>Basic Notions &#8212; Introduction to Weakening Relations</title>
   
   
   
@@ -61,6 +61,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'contents/basics';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -149,7 +151,11 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Basics (under construction)</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Basic Notions</a></li>
+</ul>
+
     </div>
 </nav></div>
     </div>
@@ -331,7 +337,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Basic Notions</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -340,9 +346,14 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#order-regular-categories">Order-Regular Categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weighted-limits-and-colimits">Weighted Limits and Colimits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factorisation-system">Factorisation System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weakening-relations">Weakening Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -353,7 +364,75 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p><strong>Lemma:</strong> …</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="basic-notions">
+<h1>Basic Notions<a class="headerlink" href="#basic-notions" title="Permalink to this heading">#</a></h1>
+<p>(under construction)</p>
+<p>We use <strong>order</strong> as a generic word for pre-order or posets. The category <strong>Ord</strong> is either the category <strong>Pos</strong> of posets or the category <strong>Pre</strong> of pre-orders, depending on the context.</p>
+<section id="order-regular-categories">
+<h2>Order-Regular Categories<a class="headerlink" href="#order-regular-categories" title="Permalink to this heading">#</a></h2>
+<p>An <strong>order-enriched</strong> category is a category enriched over <strong>Ord</strong>.</p>
+<p>An <strong>order-regular</strong> category is an order-enriched category which has</p>
+<ul class="simple">
+<li><p>finite weighted limits and</p></li>
+<li><p>coinserters that are stable under pullback.</p></li>
+</ul>
+<p>For the remainder of this section, let us fix an order regular category <span class="math notranslate nohighlight">\(\mathcal C\)</span>. We denote objects by <span class="math notranslate nohighlight">\(A,B,\ldots\)</span> and arrows by <span class="math notranslate nohighlight">\(f,g,\ldots\)</span>. We write <span class="math notranslate nohighlight">\(f\le g\)</span> to express that two arrow <span class="math notranslate nohighlight">\(f,g:A\to B\)</span> are ordered.</p>
+</section>
+<section id="weighted-limits-and-colimits">
+<h2>Weighted Limits and Colimits<a class="headerlink" href="#weighted-limits-and-colimits" title="Permalink to this heading">#</a></h2>
+<p>… spans, cospans, …</p>
+<ul class="simple">
+<li><p>comma objects</p></li>
+<li><p>co-comma objects</p></li>
+<li><p>co-inserters</p></li>
+</ul>
+<p><strong>Example:</strong> The order <span class="math notranslate nohighlight">\(\sqsubseteq_A\)</span> on <span class="math notranslate nohighlight">\(A\)</span> is the comma of the cospan <span class="math notranslate nohighlight">\((1_A,1_A)\)</span>.</p>
+<p><strong>Lemma:</strong> <span class="math notranslate nohighlight">\((R,p,q)\)</span> is the comma object of the cospan <span class="math notranslate nohighlight">\((f,1)\)</span> if and only if there is <span class="math notranslate nohighlight">\(d\)</span> such that <span class="math notranslate nohighlight">\(pd=1, dp\le 1, qd=f\)</span>.</p>
+<p><em>Proof:</em> Only if is a straight-forward verification. For the other direction see <span class="xref myst">here</span>.</p>
+</section>
+<section id="factorisation-system">
+<h2>Factorisation System<a class="headerlink" href="#factorisation-system" title="Permalink to this heading">#</a></h2>
+<p>Every order-regular category has a factorisation system (E,M) where E is the class of coinserters and M is the class of representably fully-faithful arrows. This factorisation system supports an appropriate 2-dimensional version of the diagonalization property.</p>
+<p>We call the arrows in E order-epis and the arrows in M order-monos.</p>
+<p><strong>Example:</strong> In the category Ord, the order-epis are precisely the surjections and the order-monos are precisely the embeddings (=order-reflecing maps).</p>
+</section>
+<section id="relations">
+<h2>Relations<a class="headerlink" href="#relations" title="Permalink to this heading">#</a></h2>
+<p>In every order-regular category we can talk about relations and weakening relations.</p>
+<p>A <strong>relation</strong> is a span that is jointly order-mono. <a class="footnote-reference brackets" href="#jointlyordermono" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<p><strong>Composition of relations</strong> is via pullback and image factorisation. The identity relation <span class="math notranslate nohighlight">\(I_A\)</span> on <span class="math notranslate nohighlight">\(A\)</span> is the span <span class="math notranslate nohighlight">\((1_A,1_A)\)</span>.</p>
+<p>Given an order-regular category <span class="math notranslate nohighlight">\(\mathcal C\)</span>, we can form the order-enriched category <strong>category of relations</strong> <span class="math notranslate nohighlight">\(\sf Rel \mathcal C\)</span>, which has as objects the objects of <span class="math notranslate nohighlight">\(\mathcal C\)</span> and as arrows the relations of <span class="math notranslate nohighlight">\(\mathcal C\)</span>.</p>
+<p>One can understand the definition of order-regular category as providing precisely what is needed to get the following result.</p>
+<p><strong>Proposition:</strong> In an order-regular category, composition of relations is associative.</p>
+<p><strong>Proposition:</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(I_A \ \le \ {\sqsubseteq_A}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\sqsubseteq_A \,; \sqsubseteq_A \ \le \ {\sqsubseteq_A}\)</span></p></li>
+</ul>
+<p>To summarize, the category <span class="math notranslate nohighlight">\(\sf Rel\mathcal C\)</span> has:</p>
+<ul class="simple">
+<li><p>For every object <span class="math notranslate nohighlight">\(A\)</span> an order <span class="math notranslate nohighlight">\(\sqsubseteq_A\)</span>.</p></li>
+<li><p>For every object <span class="math notranslate nohighlight">\(A\)</span> an identity relation.</p></li>
+<li><p>For any two relations <span class="math notranslate nohighlight">\(R:A\to B\)</span> and <span class="math notranslate nohighlight">\(S:B\to C\)</span> the composition <span class="math notranslate nohighlight">\(R\,;S:A\to C\)</span>.</p></li>
+<li><p>Composition is order-preserving and associative.</p></li>
+</ul>
+</section>
+<section id="weakening-relations">
+<h2>Weakening Relations<a class="headerlink" href="#weakening-relations" title="Permalink to this heading">#</a></h2>
+<p>A relation <span class="math notranslate nohighlight">\(R:A\to B\)</span> is a weakening relation if</p>
+<div class="math notranslate nohighlight">
+\[\sqsubseteq_A\,;R\,;\sqsubseteq_B {} = {} R\]</div>
+<p>…</p>
+</section>
+<section id="id2">
+<h2><a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<hr class="footnotes docutils" />
+<aside class="footnote brackets" id="jointlyordermono" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>The span <span class="math notranslate nohighlight">\(A\stackrel f \leftarrow C \stackrel g \rightarrow B\)</span> of jointly order-mono if <span class="math notranslate nohighlight">\(\langle f,g\rangle: C\to A\times B\)</span> is order-mono. In Ord that means that <span class="math notranslate nohighlight">\(C\)</span> can be identified with a subset of <span class="math notranslate nohighlight">\(A\times B\)</span> that is ordered pointwise.</p>
+</aside>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -412,9 +491,14 @@ document.write(`
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#order-regular-categories">Order-Regular Categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weighted-limits-and-colimits">Weighted Limits and Colimits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factorisation-system">Factorisation System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relations">Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weakening-relations">Weakening Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
