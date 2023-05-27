@@ -12,7 +12,7 @@ An **order-regular** category is an order-enriched category which has
 - finite weighted limits and
 - coinserters that are stable under pullback.
 
-For the remainder of this section, let us fix an order regular category $\mathcal C$. We denote objects by $A,B,\ldots$ and arrows by $f,g,\ldots$. We write $f\le g$ to express that two arrow $f,g:A\to B$ are ordered.
+For the remainder of this section, let us fix an order regular category $\mathcal C$. We denote objects by $A,B,\ldots$ and arrows by $f,g,\ldots, p,q,\ldots, j,k\ldots$. We write $f\le g$ to express that two arrow $f,g:A\to B$ are ordered.
 
 
 ## Weighted Limits and Colimits
@@ -25,7 +25,7 @@ For the remainder of this section, let us fix an order regular category $\mathca
 
 **Example:** The order $\sqsubseteq_A$ on $A$ is the comma of the cospan $(1_A,1_A)$.
 
-**Lemma:** $(R,p,q)$ is the comma object of the cospan $(f,1)$ if and only if there is $d$ such that $pd=1, dp\le 1, qd=f$.
+**Lemma:** $(R,p,q)$ is the comma object of the cospan $(k,1)$ if and only if there is $d$ such that $pd=1, dp\le 1, qd=f$.
 
 *Proof:* Only if is a straight-forward verification. For the other direction see [here](../img/drewslemma.png).
 
