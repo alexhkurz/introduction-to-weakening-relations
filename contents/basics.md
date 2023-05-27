@@ -12,7 +12,7 @@ An **order-regular** category is an order-enriched category which has
 - finite weighted limits and
 - coinserters that are stable under pullback.
 
-For the remainder of this section, let us fix an order regular category $\mathcal C$. We denote objects by $A,B,\ldots$ and arrows by $f,g,\ldots$. We write $f\le g$ to express that two arrow $f,g:A\to B$ are ordered.
+For the remainder of this section, let us fix an order regular category $\mathcal C$. We denote objects by $A,B,\ldots$ and arrows by $f,g,\ldots, p,q,\ldots, j,k\ldots$. We write $f\le g$ to express that two arrow $f,g:A\to B$ are ordered.
 
 
 ## Weighted Limits and Colimits
